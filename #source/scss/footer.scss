@@ -1,0 +1,108 @@
+$j: center;
+$c: center;
+$w: wrap;
+
+@mixin jcw($j, $c, $w) {
+  display: flex;
+  justify-content: $j;
+  align-items: $c;
+  flex-wrap: $w;
+}
+
+.footer {
+  background-color: #f9fafe;
+  h2,
+  p {
+    text-align: center;
+  }
+  h2 {
+    color: #34444d;
+    font-family: "Oswald";
+    font-size: 48px;
+    line-height: 58px;
+    margin: 70px auto 0;
+    max-width: 555px;
+    width: 100%;
+  }
+  p {
+    color: #767b7e;
+    font-size: 32px;
+    margin-top: 9px;
+  }
+  &__body {
+    @include jcw($j, $c, $w);
+    width: 100%;
+  }
+  &__img {
+    @include jcw($j, $c, $w);
+    max-height: 1030px;
+    margin-left: -15%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    margin-left: -13%;
+    margin-top: -30px;
+    padding-bottom: 100px;
+    overflow: hidden;
+  }
+  &__list {
+    ul {
+      li {
+        width: 360px;
+        color: #586369;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 30px;
+        &:first-child {
+          width: 334px;
+        }
+        &:nth-child(3) {
+          width: 300px;
+        }
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  &__signature {
+    margin-left: 60px;
+    img {
+      width: 90%;
+    }
+  }
+  &__pen {
+    margin-top: 65px;
+    margin-left: -30px;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .footer__img,
+  .footer__text {
+    margin-left: 0;
+  }
+}
+@media (max-width: 770px) {
+  .footer__list {
+    ul {
+      li {
+        width: 100%;
+        padding: 0 20px;
+      }
+    }
+  }
+  .footer__btn {
+    width: 50% !important;
+  }
+}
