@@ -762,10 +762,10 @@ h6 {
     -ms-flex-pack: end;
     justify-content: flex-end; }
   .top__crane {
-    top: 10%;
-    left: -65%; }
+    top: 0;
+    left: -50%; }
   .top__order {
-    margin: 100% auto 0;
+    margin: 50% auto 0;
     width: 50%; }
     .top__order p {
       width: 100%; }
@@ -777,10 +777,10 @@ h6 {
     top: auto;
     bottom: 0; }
   .top__crane {
-    top: 0;
+    top: 10%;
     left: -100%; }
   .top__order {
-    margin: 100% 10%; }
+    margin: 65% 10%; }
   .device {
     top: 75px;
     right: -50%; }
@@ -794,9 +794,9 @@ h6 {
   .top__body h2 {
     font-size: 40px; }
   .top__order {
-    margin: 100% 10%; }
+    margin: 90% 10%; }
   .top__crane {
-    top: 25%;
+    top: 20%;
     left: -100%;
     right: 10%; }
   .top__text {
