@@ -773,6 +773,9 @@ h6 {
     margin: 0; } }
 
 @media (max-width: 500px) {
+  .top__body {
+    top: 5%;
+  }
   .top__director {
     top: auto;
     bottom: 0; }
