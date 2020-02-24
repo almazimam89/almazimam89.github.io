@@ -741,6 +741,9 @@ h6 {
     top: 10%;
     left: 0;
     width: 100%; }
+  .top__body h1, .top__body h2 {
+    font-size: 35px;
+  }
   .top__director {
     top: 48.5%;
     display: -webkit-box;
